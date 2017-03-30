@@ -54,4 +54,5 @@ set(RX_COMPILE_FEATURES
 
 set(IX_SRC_DIR ${RXCPP_DIR}/Ix/CPP/src)
 set(RX_SRC_DIR ${RXCPP_DIR}/Rx/v2/src)
+set(RX_INCLUDE_DIR ${RXCPP_DIR}/Rx/v2/include)
 set(RX_CATCH_DIR ${RXCPP_DIR}/ext/catch/include)

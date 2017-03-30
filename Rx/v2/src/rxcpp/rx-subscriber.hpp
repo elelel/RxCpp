@@ -7,6 +7,9 @@
 
 #include "rx-includes.hpp"
 
+#include "rx-observer.hpp"
+#include "rx-subscription.hpp"
+
 namespace rxcpp {
 
 template<class T>

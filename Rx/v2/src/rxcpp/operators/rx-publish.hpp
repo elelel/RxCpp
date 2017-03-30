@@ -29,6 +29,8 @@
 #include "../rx-includes.hpp"
 #include "./rx-multicast.hpp"
 
+#include "../rx-subjects.hpp"
+
 namespace rxcpp {
 
 namespace operators {

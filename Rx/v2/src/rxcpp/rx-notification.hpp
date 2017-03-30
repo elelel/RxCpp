@@ -5,7 +5,11 @@
 #if !defined(RXCPP_RX_NOTIFICATION_HPP)
 #define RXCPP_RX_NOTIFICATION_HPP
 
+#include <limits>
+#include <memory>
+
 #include "rx-includes.hpp"
+#include "rx-subscriber.hpp"
 
 namespace rxcpp {
 

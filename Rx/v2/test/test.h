@@ -8,6 +8,14 @@ inline bool uncaught_exception() noexcept(true) {
 #endif
 
 #include "rxcpp/rx-lite.hpp"
+
+#include "rxcpp/rx-util.hpp"
+#include "rxcpp/rx-sources.hpp"
+#include "rxcpp/rx-operators.hpp"
+#include "rxcpp/rx-subjects.hpp"
+#include "rxcpp/rx-scheduler.hpp"
+#include "rxcpp/rx-notification.hpp"
+
 namespace rx=rxcpp;
 namespace rxu=rxcpp::util;
 namespace rxs=rxcpp::sources;

@@ -7,6 +7,9 @@
 
 #include "../rx-includes.hpp"
 
+#include "../rx-coordination.hpp"
+#include "../rx-notification.hpp"
+
 namespace rxcpp {
 
 namespace subjects {
@@ -189,7 +192,7 @@ public:
 
 }
 
-class synchronize_in_one_worker : public coordination_base
+  class synchronize_in_one_worker : public ::rxcpp::coordination_base
 {
     rxsc::scheduler factory;
 

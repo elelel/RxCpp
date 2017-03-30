@@ -8,6 +8,10 @@
 
 #include "rx-includes.hpp"
 
+#include "rx-predef.hpp"
+#include "rx-scheduler.hpp"
+#include "rx-util.hpp"
+
 namespace rxcpp {
 
 namespace sources {

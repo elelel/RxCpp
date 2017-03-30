@@ -9,6 +9,8 @@
 
 #include "../rx-includes.hpp"
 
+#include "../rx-scheduler.hpp"
+
 namespace rxcpp {
 
 namespace subjects {

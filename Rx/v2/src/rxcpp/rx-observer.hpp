@@ -7,6 +7,8 @@
 
 #include "rx-includes.hpp"
 
+#include "rx-predef.hpp"
+
 namespace rxcpp {
 
 

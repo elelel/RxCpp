@@ -7,6 +7,8 @@
 
 #include "rx-includes.hpp"
 
+#include "rx-util.hpp"
+
 namespace rxcpp {
 
 //

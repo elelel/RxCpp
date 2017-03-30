@@ -5,8 +5,6 @@
 #if !defined(RXCPP_SOURCES_RX_RANGE_HPP)
 #define RXCPP_SOURCES_RX_RANGE_HPP
 
-#include "../rx-includes.hpp"
-
 /*! \file rx-range.hpp
 
     \brief Returns an observable that sends values in the range ```first```-```last``` by adding ```step``` to the previous value. The values are sent on the specified scheduler.
@@ -29,6 +27,12 @@
     \snippet range.cpp subscribe_on range sample
     \snippet output.txt subscribe_on range sample
 */
+
+#include <type_traits>
+
+#include "../rx-includes.hpp"
+
+#include "../rx-coordination.hpp"
 
 namespace rxcpp {
 

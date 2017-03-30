@@ -5,6 +5,9 @@
 #if !defined(RXCPP_RX_SCHEDULER_TEST_HPP)
 #define RXCPP_RX_SCHEDULER_TEST_HPP
 
+#include <list>
+
+#include "../rx-coordination.hpp"
 #include "../rx-includes.hpp"
 
 namespace rxcpp {

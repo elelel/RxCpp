@@ -7,6 +7,9 @@
 
 #include "rx-includes.hpp"
 
+#include "rx-operators.hpp"
+#include "rx-sources.hpp"
+
 #ifdef __GNUG__
 #define EXPLICIT_THIS this->
 #else

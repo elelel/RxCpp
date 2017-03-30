@@ -18,6 +18,8 @@
 
 #include "../rx-includes.hpp"
 
+#include "../rx-subscriber.hpp"
+
 namespace rxcpp {
 
 namespace detail {

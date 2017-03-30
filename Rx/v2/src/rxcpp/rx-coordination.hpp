@@ -7,6 +7,9 @@
 
 #include "rx-includes.hpp"
 
+#include "rx-scheduler.hpp"
+#include "rx-subscriber.hpp"
+
 namespace rxcpp {
 
 struct tag_coordinator {};

@@ -5,6 +5,9 @@
 
 #include "rx-includes.hpp"
 
+#include "rx-notification.hpp"
+#include "rx-observable.hpp"
+
 namespace rxcpp {
 
 namespace test {

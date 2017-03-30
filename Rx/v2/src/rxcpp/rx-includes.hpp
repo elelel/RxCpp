@@ -12,17 +12,6 @@
 #include <pthread.h>
 #endif
 
-#include "rx-util.hpp"
-#include "rx-predef.hpp"
-#include "rx-subscription.hpp"
-#include "rx-observer.hpp"
-#include "rx-scheduler.hpp"
-#include "rx-subscriber.hpp"
-#include "rx-notification.hpp"
-#include "rx-coordination.hpp"
-#include "rx-sources.hpp"
-#include "rx-subjects.hpp"
-#include "rx-operators.hpp"
 #include "rx-observable.hpp"
 #include "rx-connectable_observable.hpp"
 #include "rx-grouped_observable.hpp"

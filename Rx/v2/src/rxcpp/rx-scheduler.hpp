@@ -10,6 +10,8 @@
 
 #include "rx-includes.hpp"
 
+#include "rx-subscription.hpp"
+
 namespace rxcpp {
 
 namespace schedulers {

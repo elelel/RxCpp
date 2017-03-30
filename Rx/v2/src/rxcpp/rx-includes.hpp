@@ -7,37 +7,7 @@
 
 #include "preprocess.h"
 
-#include <stdlib.h>
-
-#include <cstddef>
-
-#include <iostream>
-#include <iomanip>
-
-#include <exception>
-#include <functional>
-#include <memory>
-#include <array>
-#include <vector>
-#include <algorithm>
-#include <atomic>
-#include <map>
-#include <set>
-#include <mutex>
-#include <deque>
-#include <thread>
-#include <future>
-#include <list>
-#include <queue>
-#include <chrono>
-#include <condition_variable>
-#include <initializer_list>
-#include <typeinfo>
-#include <tuple>
-#include <unordered_set>
-#include <type_traits>
-#include <utility>
-
+// This include should be moved to the place of usage after which this file can be deleted
 #if defined(RXCPP_ON_IOS) || defined(RXCPP_ON_ANDROID)
 #include <pthread.h>
 #endif
@@ -113,6 +83,10 @@
 #include "operators/rx-zip.hpp"
 #endif
 
+#pragma push_macro("min")
+#pragma push_macro("max")
+#undef min
+#undef max
 #pragma pop_macro("min")
 #pragma pop_macro("max")
 

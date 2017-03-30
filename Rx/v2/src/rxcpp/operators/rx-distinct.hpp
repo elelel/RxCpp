@@ -8,7 +8,7 @@
 
     \return Observable that emits those items from the source observable that are distinct.
 
-    \note istinct keeps an unordered_set<T> of past values. Due to an issue in multiple implementations of std::hash<T>, rxcpp maintains a whitelist of hashable types. new types can be added by specializing rxcpp::filtered_hash<T>
+    \note distinct keeps an unordered_set<T> of past values. Due to an issue in multiple implementations of std::hash<T>, rxcpp maintains a whitelist of hashable types. new types can be added by specializing rxcpp::filtered_hash<T>
 
     \sample
     \snippet distinct.cpp distinct sample
@@ -17,6 +17,8 @@
 
 #if !defined(RXCPP_OPERATORS_RX_DISTINCT_HPP)
 #define RXCPP_OPERATORS_RX_DISTINCT_HPP
+
+#include <unordered_set>
 
 #include "../rx-includes.hpp"
 

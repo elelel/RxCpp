@@ -5,6 +5,9 @@
 #if !defined(RXCPP_RX_SCHEDULER_HPP)
 #define RXCPP_RX_SCHEDULER_HPP
 
+#include <functional>
+#include <queue>
+
 #include "rx-includes.hpp"
 
 namespace rxcpp {

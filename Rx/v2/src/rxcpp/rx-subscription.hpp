@@ -5,6 +5,9 @@
 #if !defined(RXCPP_RX_SUBSCRIPTION_HPP)
 #define RXCPP_RX_SUBSCRIPTION_HPP
 
+#include <algorithm>
+#include <set>
+
 #include "rx-includes.hpp"
 
 namespace rxcpp {

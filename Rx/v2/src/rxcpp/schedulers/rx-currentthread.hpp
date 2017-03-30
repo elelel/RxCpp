@@ -5,6 +5,8 @@
 #if !defined(RXCPP_RX_SCHEDULER_CURRENT_THREAD_HPP)
 #define RXCPP_RX_SCHEDULER_CURRENT_THREAD_HPP
 
+#include <thread>
+
 #include "../rx-includes.hpp"
 
 namespace rxcpp {

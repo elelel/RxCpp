@@ -125,7 +125,4 @@ compiler-specific settings
 #define _VARIADIC_MAX 10
 #endif
 
-#pragma push_macro("min")
-#pragma push_macro("max")
-#undef min
-#undef max
+

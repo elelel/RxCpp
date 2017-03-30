@@ -5,6 +5,8 @@
 #if !defined(RXCPP_RX_REPLAYSUBJECT_HPP)
 #define RXCPP_RX_REPLAYSUBJECT_HPP
 
+#include <list>
+
 #include "../rx-includes.hpp"
 
 namespace rxcpp {

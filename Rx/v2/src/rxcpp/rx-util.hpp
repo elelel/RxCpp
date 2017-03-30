@@ -5,6 +5,9 @@
 #if !defined(RXCPP_RX_UTIL_HPP)
 #define RXCPP_RX_UTIL_HPP
 
+#include <condition_variable>
+#include <vector>
+
 #include "rx-includes.hpp"
 
 #if !defined(RXCPP_ON_IOS) && !defined(RXCPP_ON_ANDROID) && !defined(RXCPP_THREAD_LOCAL)

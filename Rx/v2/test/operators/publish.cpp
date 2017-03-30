@@ -3,6 +3,7 @@
 #include <rxcpp/operators/rx-connect_forever.hpp>
 #include <rxcpp/operators/rx-ref_count.hpp>
 
+#include <rxcpp/rx-connectable_observable.hpp>
 
 SCENARIO("publish range", "[hide][range][subject][publish][subject][operators]"){
     GIVEN("a range"){

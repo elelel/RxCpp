@@ -13,7 +13,7 @@
 #endif
 
 #include "rx-observable.hpp"
-#include "rx-connectable_observable.hpp"
+//#include "rx-connectable_observable.hpp"
 
 #if !defined(RXCPP_LITE)
 #include "operators/rx-all.hpp"

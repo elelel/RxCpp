@@ -66,6 +66,8 @@
 #include "../rx-includes.hpp"
 #include "./rx-multicast.hpp"
 
+#include "../rx-connectable_observable.hpp"
+
 namespace rxcpp {
 
 namespace operators {

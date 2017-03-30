@@ -8,6 +8,7 @@
 #include "rx-includes.hpp"
 
 #include "rx-observable.hpp"
+#include "rx-sources.hpp"
 
 namespace rxcpp {
 

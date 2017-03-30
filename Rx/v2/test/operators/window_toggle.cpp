@@ -1,7 +1,7 @@
 #include "../test.h"
-#include <rxcpp/operators/rx-map.hpp>
-#include <rxcpp/operators/rx-merge.hpp>
-#include <rxcpp/operators/rx-window_toggle.hpp>
+#include <rxcpp/map>
+#include <rxcpp/merge>
+#include <rxcpp/window_toggle>
 
 namespace rxsc=rxcpp::schedulers;
 namespace rx=rxcpp;

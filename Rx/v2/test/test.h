@@ -7,7 +7,7 @@ inline bool uncaught_exception() noexcept(true) {
 }
 #endif
 
-#include "rxcpp/rx-test.hpp"
+#include <rxcpp_test>
 namespace rxt = rxcpp::test;
 
 #include "catch.hpp"

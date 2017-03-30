@@ -112,7 +112,7 @@ foreach(ONE_TEST_SOURCE ${TEST_SOURCES})
     target_compile_options(${ONE_TEST_FULL_NAME} PUBLIC ${RX_COMPILE_OPTIONS})
     target_compile_features(${ONE_TEST_FULL_NAME} PUBLIC ${RX_COMPILE_FEATURES})
     target_include_directories(${ONE_TEST_FULL_NAME}
-        PUBLIC ${RX_INCLUDE_DIR} ${RX_SRC_DIR} ${RX_CATCH_DIR}
+        PUBLIC ${RX_INCLUDE_DIR} ${RX_CATCH_DIR}
         )
     target_link_libraries(${ONE_TEST_FULL_NAME} ${CMAKE_THREAD_LIBS_INIT})
 

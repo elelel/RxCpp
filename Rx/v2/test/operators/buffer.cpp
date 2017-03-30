@@ -1,9 +1,10 @@
 #include "../test.h"
-#include <rxcpp/operators/rx-concat.hpp>
-#include <rxcpp/operators/rx-buffer_count.hpp>
-#include <rxcpp/operators/rx-buffer_time.hpp>
-#include <rxcpp/operators/rx-buffer_time_count.hpp>
-#include <rxcpp/operators/rx-take.hpp>
+
+#include <rxcpp/concat>
+#include <rxcpp/buffer>
+#include <rxcpp/buffer_with_time>
+#include <rxcpp/buffer_with_time_or_count>
+#include <rxcpp/take>
 
 namespace rxsc=rxcpp::schedulers;
 namespace rxo=rxcpp::operators;

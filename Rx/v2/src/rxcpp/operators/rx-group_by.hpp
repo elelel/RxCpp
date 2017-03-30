@@ -31,6 +31,8 @@
 
 #include "../rx-includes.hpp"
 
+#include "../rx-grouped_observable.hpp"
+
 namespace rxcpp {
 
 namespace operators {

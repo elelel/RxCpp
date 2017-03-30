@@ -3,8 +3,13 @@
 #include <rxcpp/operators/rx-merge.hpp>
 #include <rxcpp/operators/rx-observe_on.hpp>
 
-const int static_onnextcalls = 1000000;
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxs=rxcpp::sources;
+namespace rxu=rxcpp::util;
 
+const int static_onnextcalls = 1000000;
 
 SCENARIO("synchronize merge ranges", "[hide][range][synchronize][merge][perf]"){
     const int& onnextcalls = static_onnextcalls;

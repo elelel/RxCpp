@@ -1,6 +1,10 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-distinct_until_changed.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 SCENARIO("distinct_until_changed - never", "[distinct_until_changed][operators]"){
     GIVEN("a source"){
         auto sc = rxsc::make_test();

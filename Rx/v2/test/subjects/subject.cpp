@@ -6,6 +6,11 @@
 
 #include <future>
 
+namespace rx=rxcpp;
+namespace rxs=rxcpp::sources;
+namespace rxsub=rxcpp::subjects;
+namespace rxsc=rxcpp::schedulers;
+namespace rxu=rxcpp::util;
 
 const int static_onnextcalls = 10000000;
 static int aliased = 0;

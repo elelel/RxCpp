@@ -1,6 +1,11 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-skip_last.hpp>
 
+namespace rx=rxcpp;
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 SCENARIO("skip last 0", "[skip_last][operators]"){
     GIVEN("a source"){
         auto sc = rxsc::make_test();

@@ -23,6 +23,8 @@
 
 #include "../rx-includes.hpp"
 
+#include "../rx-operators.hpp"
+
 namespace rxcpp {
 
 namespace operators {

@@ -1,6 +1,10 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-take.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 SCENARIO("take 2", "[take][operators]"){
     GIVEN("a source"){
         auto sc = rxsc::make_test();

@@ -1,6 +1,11 @@
 #include "../test.h"
 #include "rxcpp/operators/rx-amb.hpp"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+namespace rx=rxcpp;
+
 SCENARIO("variadic amb never 3", "[amb][join][operators]"){
     GIVEN("3 hot observables of ints."){
         auto sc = rxsc::make_test();

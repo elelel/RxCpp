@@ -1,6 +1,11 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-map.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+namespace rxo=rxcpp::operators;
+
 SCENARIO("map stops on completion", "[map][operators]") {
     GIVEN("a test hot observable of ints") {
         auto sc = rxsc::make_test();

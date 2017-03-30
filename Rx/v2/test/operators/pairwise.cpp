@@ -1,6 +1,10 @@
 #include "../test.h"
 #include "rxcpp/operators/rx-pairwise.hpp"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 SCENARIO("pairwise - enough items to create pairs", "[pairwise][operators]") {
     GIVEN("a cold observable of n ints") {
         auto sc = rxsc::make_test();

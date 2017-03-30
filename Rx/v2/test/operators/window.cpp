@@ -6,6 +6,11 @@
 #include <rxcpp/operators/rx-window_time.hpp>
 #include <rxcpp/operators/rx-window_time_count.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+namespace rxo=rxcpp::operators;
+
 SCENARIO("window count, basic", "[window][operators]"){
     GIVEN("1 hot observable of ints."){
         auto sc = rxsc::make_test();

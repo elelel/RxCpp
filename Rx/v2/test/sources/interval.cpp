@@ -1,5 +1,9 @@
 #include "../test.h"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+
 SCENARIO("schedule_periodically", "[hide][periodically][scheduler][long][perf][sources]"){
     GIVEN("schedule_periodically"){
         WHEN("the period is 1sec and the initial is 2sec"){

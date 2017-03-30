@@ -1,6 +1,11 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-delay.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 using namespace std::chrono;
 
 SCENARIO("delay - never", "[delay][operators]"){

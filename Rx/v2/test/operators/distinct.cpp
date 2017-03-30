@@ -1,6 +1,10 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-distinct.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 SCENARIO("distinct - never", "[distinct][operators]"){
     GIVEN("a source"){
         auto sc = rxsc::make_test();

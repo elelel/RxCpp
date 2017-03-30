@@ -1,6 +1,10 @@
 #include "../test.h"
 #include "rxcpp/operators/rx-skip.hpp"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxu=rxcpp::util;
+namespace rxo=rxcpp::operators;
+
 SCENARIO("skip, complete after", "[skip][operators]"){
     GIVEN("a source"){
         auto sc = rxsc::make_test();

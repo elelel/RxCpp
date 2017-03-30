@@ -1,6 +1,9 @@
 #include "../test.h"
 #include "rxcpp/operators/rx-reduce.hpp"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxu=rxcpp::util;
+
 SCENARIO("reduce some data with seed", "[reduce][operators]"){
     GIVEN("a test hot observable of ints"){
         auto sc = rxsc::make_test();

@@ -1,6 +1,11 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-filter.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+namespace rx=rxcpp;
+
 namespace {
 bool IsPrime(int x)
 {

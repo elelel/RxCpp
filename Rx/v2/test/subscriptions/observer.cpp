@@ -1,5 +1,7 @@
 #include "../test.h"
 
+namespace rx=rxcpp;
+
 SCENARIO("subscriber traits", "[observer][traits]"){
     GIVEN("given some subscriber types"){
         int result = 0;

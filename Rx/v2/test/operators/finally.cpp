@@ -1,6 +1,10 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-finally.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 SCENARIO("finally - never", "[finally][operators]"){
     GIVEN("a source"){
         auto sc = rxsc::make_test();

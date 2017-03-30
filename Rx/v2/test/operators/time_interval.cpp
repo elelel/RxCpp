@@ -3,6 +3,11 @@
 
 using namespace std::chrono;
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+
 SCENARIO("should not emit time intervals if the source never emits any items", "[time_interval][operators]"){
     GIVEN("a source"){
         typedef rxsc::detail::test_type::clock_type::time_point::duration duration;

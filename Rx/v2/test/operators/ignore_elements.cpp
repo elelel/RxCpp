@@ -1,6 +1,11 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-ignore_elements.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+
 SCENARIO("ignore_elements - never", "[ignore_elements][operators]"){
     GIVEN("a source"){
         auto sc = rxsc::make_test();

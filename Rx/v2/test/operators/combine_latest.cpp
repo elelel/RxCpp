@@ -1,6 +1,9 @@
 #include "../test.h"
 #include "rxcpp/operators/rx-combine_latest.hpp"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxu=rxcpp::util;
+
 SCENARIO("combine_latest interleaved with tail", "[combine_latest][join][operators]"){
     GIVEN("2 hot observables of ints."){
         auto sc = rxsc::make_test();

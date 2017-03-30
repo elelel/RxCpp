@@ -6,6 +6,12 @@
 #include <rxcpp/operators/rx-flat_map.hpp>
 #include <rxcpp/operators/rx-observe_on.hpp>
 
+namespace rx=rxcpp;
+namespace rxs=rxcpp::sources;
+namespace rxu=rxcpp::util;
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+
 static const int static_tripletCount = 100;
 
 SCENARIO("pythagorian for loops", "[hide][for][pythagorian][perf]"){

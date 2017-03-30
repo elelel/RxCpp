@@ -3,6 +3,11 @@
 #include <rxcpp/operators/rx-merge.hpp>
 #include <rxcpp/operators/rx-window_toggle.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 SCENARIO("window toggle, basic", "[window_toggle][operators]"){
     GIVEN("1 hot observable of ints and hot observable of opens."){
         auto sc = rxsc::make_test();

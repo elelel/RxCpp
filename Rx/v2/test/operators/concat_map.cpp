@@ -6,6 +6,12 @@
 #include <rxcpp/operators/rx-concat_map.hpp>
 #include <rxcpp/operators/rx-observe_on.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+namespace rxs=rxcpp::sources;
+namespace rxo=rxcpp::operators;
+
 static const int static_tripletCount = 100;
 
 SCENARIO("concat_transform pythagorian ranges", "[hide][range][concat_transform][pythagorian][perf]"){

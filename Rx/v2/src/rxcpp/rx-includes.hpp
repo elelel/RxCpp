@@ -12,9 +12,6 @@
 #include <pthread.h>
 #endif
 
-#include "rx-observable.hpp"
-//#include "rx-connectable_observable.hpp"
-
 #if !defined(RXCPP_LITE)
 #include "operators/rx-all.hpp"
 #include "operators/rx-amb.hpp"
@@ -76,7 +73,7 @@
 #undef min
 #undef max
 
-// TODO
+// TODO: Fix it for MSVC somehow...
 
 #pragma pop_macro("min")
 #pragma pop_macro("max")

@@ -1,9 +1,15 @@
 #include "../test.h"
-#include <rxcpp/operators/rx-publish.hpp>
+
 #include <rxcpp/operators/rx-connect_forever.hpp>
 #include <rxcpp/operators/rx-ref_count.hpp>
 
-#include <rxcpp/rx-connectable_observable.hpp>
+#include <rxcpp/publish>
+
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+namespace rxs=rxcpp::sources;
 
 SCENARIO("publish range", "[hide][range][subject][publish][subject][operators]"){
     GIVEN("a range"){

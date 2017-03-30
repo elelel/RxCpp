@@ -1,6 +1,11 @@
 #include "../test.h"
 #include "rxcpp/operators/rx-sequence_equal.hpp"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+
 SCENARIO("sequence_equal - source never emits", "[sequence_equal][operators]"){
     GIVEN("two sources"){
         auto sc = rxsc::make_test();

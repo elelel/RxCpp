@@ -1,5 +1,10 @@
 #include "../test.h"
 
+namespace rx=rxcpp;
+namespace rxsc=rxcpp::schedulers;
+namespace rxu=rxcpp::util;
+namespace rxo=rxcpp::operators;
+
 namespace detail {
 
 template<class Predicate>

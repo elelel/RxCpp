@@ -1,6 +1,11 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-debounce.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 using namespace std::chrono;
 
 SCENARIO("debounce - never", "[debounce][operators]"){

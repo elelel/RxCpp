@@ -1,6 +1,11 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-start_with.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+
 SCENARIO("start_with - source never emits or completes", "[start_with][operators]"){
     GIVEN("a source"){
         auto sc = rxsc::make_test();

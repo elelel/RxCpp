@@ -1,6 +1,12 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-switch_on_next.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+namespace rxn=rx::notifications;
+
 SCENARIO("switch_on_next - some changes", "[switch_on_next][operators]"){
     GIVEN("a source"){
         auto sc = rxsc::make_test();

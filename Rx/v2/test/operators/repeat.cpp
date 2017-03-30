@@ -1,6 +1,9 @@
 #include "../test.h"
 #include "rxcpp/operators/rx-repeat.hpp"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxu=rxcpp::util;
+namespace rxo=rxcpp::operators;
 
 SCENARIO("repeat, basic test", "[repeat][operators]"){
     GIVEN("cold observable of 3 ints."){

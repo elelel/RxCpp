@@ -1,5 +1,9 @@
 #include "../test.h"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+
 SCENARIO("scope, cold observable", "[scope][sources]"){
     GIVEN("a test cold observable of ints"){
         auto sc = rxsc::make_test();

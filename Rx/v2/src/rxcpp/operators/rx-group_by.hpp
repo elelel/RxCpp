@@ -29,6 +29,8 @@
 #if !defined(RXCPP_OPERATORS_RX_GROUP_BY_HPP)
 #define RXCPP_OPERATORS_RX_GROUP_BY_HPP
 
+#include <map>
+
 #include "../rx-includes.hpp"
 
 #include "../rx-grouped_observable.hpp"

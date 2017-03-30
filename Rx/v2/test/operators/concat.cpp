@@ -3,6 +3,12 @@
 #include <rxcpp/operators/rx-reduce.hpp>
 #include <rxcpp/operators/rx-observe_on.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+namespace rxs=rxcpp::sources;
+
 const int static_onnextcalls = 1000000;
 
 SCENARIO("synchronize concat ranges", "[hide][range][synchronize][concat][perf]"){

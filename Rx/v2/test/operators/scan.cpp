@@ -3,6 +3,10 @@
 #include <rxcpp/operators/rx-take.hpp>
 #include <rxcpp/operators/rx-scan.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 SCENARIO("scan: issue 41", "[scan][operators][issue][hide]"){
     GIVEN("map of scan of interval"){
         auto sc = rxsc::make_current_thread();

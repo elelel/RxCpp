@@ -10,6 +10,10 @@
 
 #include <locale>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxu=rxcpp::util;
+namespace rxo=rxcpp::operators;
+
 SCENARIO("range partitioned by group_by across hardware threads to derive pi", "[hide][pi][group_by][observe_on][long][perf]"){
     GIVEN("a for loop"){
         WHEN("partitioning pi series across all hardware threads"){

@@ -1,6 +1,10 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-replay.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+
 SCENARIO("replay basic", "[replay][multicast][subject][operators]"){
     GIVEN("a test hot observable of ints"){
         auto sc = rxsc::make_test();

@@ -1,5 +1,9 @@
 #include "../test.h"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+
 SCENARIO("empty emits no items", "[empty][sources]"){
     GIVEN("an empty source"){
         auto sc = rxsc::make_test();

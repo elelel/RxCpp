@@ -1,5 +1,9 @@
 #include "../test.h"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+
 SCENARIO("timer", "[hide][periodically][timer][scheduler][long][perf][sources]"){
     GIVEN("the timer of 1 sec"){
         WHEN("the period is 1 sec"){

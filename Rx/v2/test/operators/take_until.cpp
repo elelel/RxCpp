@@ -2,6 +2,11 @@
 #include <rxcpp/operators/rx-map.hpp>
 #include <rxcpp/operators/rx-take_until.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+namespace rxo=rxcpp::operators;
+
 SCENARIO("take_until trigger on_next", "[take_until][take][operators]"){
     GIVEN("2 sources"){
         auto sc = rxsc::make_test();

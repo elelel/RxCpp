@@ -3,6 +3,10 @@
 
 // NOTE: `exists` is an alias of `any`
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 SCENARIO("exists emits true if an item satisfies the given condition", "[exists][operators]"){
     GIVEN("a source") {
         auto sc = rxsc::make_test();

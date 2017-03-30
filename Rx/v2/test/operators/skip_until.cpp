@@ -1,6 +1,11 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-skip_until.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+
 SCENARIO("skip_until, some data next", "[skip_until][skip][operators]"){
     GIVEN("2 sources"){
         auto sc = rxsc::make_test();

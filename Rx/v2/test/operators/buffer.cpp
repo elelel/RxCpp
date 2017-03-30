@@ -5,6 +5,12 @@
 #include <rxcpp/operators/rx-buffer_time_count.hpp>
 #include <rxcpp/operators/rx-take.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+namespace rxs=rxcpp::sources;
+
 SCENARIO("buffer count partial window", "[buffer][operators]"){
     GIVEN("1 hot observable of ints."){
         auto sc = rxsc::make_test();

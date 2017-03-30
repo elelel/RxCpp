@@ -1,6 +1,10 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-element_at.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 SCENARIO("element_at - never", "[element_at][operators]"){
     GIVEN("a source"){
         auto sc = rxsc::make_test();

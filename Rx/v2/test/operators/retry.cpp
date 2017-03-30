@@ -1,6 +1,11 @@
 #include "../test.h"
 #include "rxcpp/operators/rx-retry.hpp"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+namespace rxo=rxcpp::operators;
+
 SCENARIO("retry, basic test", "[retry][operators]") {
     GIVEN("hot observable of 3x4x7 ints with errors inbetween the groups. Infinite retry.") {
         auto sc = rxsc::make_test();

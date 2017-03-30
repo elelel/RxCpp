@@ -1,6 +1,11 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-tap.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+
 SCENARIO("tap stops on completion", "[tap][operators]"){
     GIVEN("a test hot observable of ints"){
         auto sc = rxsc::make_test();

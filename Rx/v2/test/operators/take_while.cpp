@@ -1,6 +1,9 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-take_while.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxu=rxcpp::util;
+
 namespace {
     class not_equal_to {
         int value;

@@ -3,6 +3,11 @@
 
 using namespace std::chrono;
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+
 SCENARIO("should not timeout if the source never emits any items", "[timeout][operators]"){
     GIVEN("a source"){
         auto sc = rxsc::make_test();

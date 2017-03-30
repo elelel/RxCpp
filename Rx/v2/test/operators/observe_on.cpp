@@ -2,6 +2,12 @@
 #include <rxcpp/operators/rx-take.hpp>
 #include <rxcpp/operators/rx-observe_on.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+namespace rxs=rxcpp::sources;
+
 const int static_onnextcalls = 100000;
 
 SCENARIO("range observed on new_thread", "[hide][range][observe_on_debug][observe_on][long][perf]"){

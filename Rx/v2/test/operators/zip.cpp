@@ -1,6 +1,11 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-zip.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
+
 SCENARIO("zip never/never", "[zip][join][operators]"){
     GIVEN("2 hot observables of ints."){
         auto sc = rxsc::make_test();

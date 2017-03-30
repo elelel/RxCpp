@@ -1,6 +1,11 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-any.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+namespace rxo=rxcpp::operators;
+
 SCENARIO("contains emits true if an item satisfies the given condition", "[contains][operators]"){
     GIVEN("a source") {
         auto sc = rxsc::make_test();

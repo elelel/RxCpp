@@ -1,5 +1,9 @@
 #include "../test.h"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxu=rxcpp::util;
+namespace rx=rxcpp;
+
 SCENARIO("defer stops on completion", "[defer][sources]"){
     GIVEN("a test cold observable of ints"){
         auto sc = rxsc::make_test();

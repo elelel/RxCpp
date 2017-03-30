@@ -1,6 +1,10 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-all.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 SCENARIO("is_empty emits false if the source observable is not empty", "[is_empty][operators]") {
     GIVEN("a source") {
         auto sc = rxsc::make_test();

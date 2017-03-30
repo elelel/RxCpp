@@ -1,6 +1,9 @@
 #include "../test.h"
 #include "rxcpp/operators/rx-with_latest_from.hpp"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxu=rxcpp::util;
+
 SCENARIO("with_latest_from interleaved with tail", "[with_latest_from][join][operators]"){
     GIVEN("2 hot observables of ints."){
         auto sc = rxsc::make_test();

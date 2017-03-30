@@ -1,6 +1,11 @@
 #include "../test.h"
 #include <rxcpp/operators/rx-all.hpp>
 
+namespace rxsc=rxcpp::schedulers;
+namespace rxo=rxcpp::operators;
+namespace rx=rxcpp;
+namespace rxu=rxcpp::util;
+
 SCENARIO("all emits true if every item emitted by the source observable evaluated as true", "[all][operators]") {
     GIVEN("a source") {
         auto sc = rxsc::make_test();

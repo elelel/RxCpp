@@ -1,6 +1,11 @@
 #include "../test.h"
 #include "rxcpp/operators/rx-sample_time.hpp"
 
+namespace rxsc=rxcpp::schedulers;
+namespace rx=rxcpp;
+namespace rxo=rxcpp::operators;
+namespace rxu=rxcpp::util;
+
 SCENARIO("sample with time, error", "[sample_with_time][operators]"){
     GIVEN("1 hot observable of ints."){
         auto sc = rxsc::make_test();
